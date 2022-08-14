@@ -1,0 +1,138 @@
+<section class="container mb-4 mb-md-5 heading">
+  <article class="col">
+    <h1 class="text-center">Dados da empresa</h1>
+    <h2 class="text-center mb-3">Insira os dados da sua empresa.</h2>
+  </article>
+</section>
+
+<section class="container form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="razao_social" class="form-label mb-1">Razão social</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg form-control-lg"
+          id="razao_social"
+          formControlName="razao_social"
+          placeholder="Digite a razão social da sua empresa" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="nome_fantasia" class="form-label mb-1">Nome fantasia</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="nome_fantasia"
+          formControlName="nome_fantasia"
+          placeholder="Digite o nome fantasia da sua empresa" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="cep" class="form-label mb-1">CEP</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="cep"
+          formControlName="cep"
+          placeholder="Digite o CEP da sua empresa" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="logradouro" class="form-label mb-1">Logradouro</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="logradouro"
+          formControlName="logradouro"
+          placeholder="Digite o logradouro da sua empresa" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="cidade" class="form-label mb-1">Cidade</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="cidade"
+          formControlName="cidade"
+          placeholder="Digite a cidade da sua empresa" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="estado" class="form-label mb-1">Estado</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="estado"
+          formControlName="estado"
+          placeholder="Digite o estado da sua empresa" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="numero" class="form-label mb-1">Número</label>
+
+        <input
+          type="number"
+          class="form-control form-control-lg"
+          id="numero"
+          formControlName="numero"
+          placeholder="Digite o número (endereço) da sua empresa" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="complemento" class="form-label mb-1">
+          Complemento (opcional)
+        </label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="complemento"
+          formControlName="complemento"
+          placeholder="Digite um complemento (opcional)" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="codigo" class="form-label mb-1">
+          Caso você tenha recebido uma indicação para conhecer o Cartão do
+          Empresário, insira o código da pessoa que o indicou.
+        </label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="codigo"
+          formControlName="codigo"
+          placeholder="Digite o código da pessoa que o indicou" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="d-grid d-md-flex mx-auto justify-content-md-between mt-4">
+        <button
+          type="submit"
+          class="btn btn btn-secondary d-block mb-4 mb-md-0">
+          Voltar
+        </button>
+
+        <button type="submit" class="btn btn btn-lg btn-primary d-block">
+          Continuar
+        </button>
+      </section>
+    </section>
+  </form>
+</section>

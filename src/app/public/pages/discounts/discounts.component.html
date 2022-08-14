@@ -1,0 +1,11 @@
+<div class="swiper-container" #swiperContainer>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let discount of discounts">
+      <img [src]="discount.imagem" alt="Discount Image" />
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>

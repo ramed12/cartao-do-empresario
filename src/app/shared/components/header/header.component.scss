@@ -1,0 +1,47 @@
+@import "app";
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .navbar-toggler {
+    background-color: white;
+    border-radius: 0%;
+  }
+
+  ::ng-deep {
+    .nav-link {
+      float: left;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: var(--hover-menu-color) !important;
+      border-bottom: 4px solid var(--hover-menu-color) !important;
+      padding-bottom: 5px;
+      text-decoration: none;
+      transition: all 0.1s ease;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  header {
+    padding: 10px 10px;
+
+    .navbar-nav {
+      background-color: var(--bg-menu-color);
+    }
+  }
+
+  ::ng-deep {
+    .nav-link {
+      float: none !important;
+      padding: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+  }
+}

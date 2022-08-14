@@ -1,0 +1,66 @@
+@import "app";
+
+.heading {
+  h1 {
+    font-family: "Gotham";
+    font-size: 1.5rem;
+    color: $yellow-dark;
+  }
+
+  h2 {
+    font-family: "Gotham Book";
+    font-size: 1.125rem;
+    color: $gray-dark;
+  }
+}
+
+.form {
+  .form-label {
+    font-family: "Inter-Medium";
+  }
+
+  .form-control {
+    font-family: "Inter-Regular";
+    font-size: 1rem;
+    border: 1px solid $gray-light-1;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    color: $gray-medium;
+
+    &:focus {
+      border-color: $yellow-light;
+      outline-color: $yellow-light;
+      box-shadow: 0 0 0 0.25rem rgb(245 175 0 / 20%);
+    }
+  }
+
+  .btn-primary {
+    font-family: "Inter-Medium";
+    font-size: 1.125rem;
+    border-radius: 4px;
+    color: $white;
+    border-color: $yellow-light;
+    background-color: $yellow-light;
+
+    @include media-breakpoint-up(md) {
+      width: 25%;
+    }
+  }
+
+  .btn-secondary {
+    font-family: "Inter-Medium";
+    font-size: 1.125rem;
+    border-radius: 4px;
+    color: $yellow-dark;
+    border-color: $yellow-dark;
+    background-color: $white;
+
+    @include media-breakpoint-up(md) {
+      width: 25%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 15%;
+    }
+  }
+}

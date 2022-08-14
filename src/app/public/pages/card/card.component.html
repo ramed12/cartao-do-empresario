@@ -1,0 +1,21 @@
+<section class="container wrapper my-5">
+  <section *ngIf="slideStep === 1">
+    <app-step1></app-step1>
+  </section>
+
+  <section *ngIf="slideStep === 2">
+    <app-step2></app-step2>
+  </section>
+
+  <section *ngIf="slideStep === 3">
+    <app-step3></app-step3>
+  </section>
+
+  <section *ngIf="slideStep === 4">
+    <app-step4></app-step4>
+  </section>
+
+  <section *ngIf="slideStep === 5">
+    <app-step5></app-step5>
+  </section>
+</section>

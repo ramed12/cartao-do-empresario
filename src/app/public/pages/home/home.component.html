@@ -1,0 +1,241 @@
+<section class="banner img-fluid"></section>
+<!-- <ul>
+  <li *ngFor="let item of dadosHome | async">
+    <img src="{{ item.url }}" class="img-fluid ml-negative" />
+  </li>
+</ul> -->
+
+<section class="bg-white">
+  <div class="py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <img
+            src="../../../../assets/images/casal-cartao-inicial.png"
+            class="img-fluid ml-negative" />
+        </div>
+        <div class="col-md-6 col-12 pt-3">
+          <h1 class="text-blue-500 fw-bold py-2">O Cartão</h1>
+          <p class="pb-3">
+            O <span class="text-info">Cartão do Empresário</span> é um produto
+            da Fecomércio-PE que oferece benefícios exclusivos doSistema
+            Fecomercio/ Sesc/Senac e seus parceiros. Pagando uma anuidade de
+            <span class="text-info">R$ 299</span>, você entra no nosso clube de
+            vantagens e tem acesso a descontos especiais em vários produtos e
+            serviços. Todos os empresários do comércio de Pernambuco tem
+            direito, inclusive o microempreendedor individual (MEI)
+          </p>
+          <button type="button" class="btn-main fs-6 py-2 px-3">
+            Faça seu Cartão
+          </button>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+          <img
+            src="../../../../assets/images/folha-cinza.png"
+            class="mr-negative mt-negative-150 d-none d-md-block img-fluid"
+            alt="Folha cinza com galho" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-blue-500">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <h3 class="text-white py-3">Descontos</h3>
+        <p class="text-white">
+          Ainda não conhece os nossos descontos exclusivos? Com o Cartão do
+          Empresário a Fecomércio-PE oferece uma variedade de descontos
+          imperdíveis.
+        </p>
+        <button type="button" class="btn-main-yellow-light fs-6 py-2 px-3">
+          Ver descontos
+        </button>
+      </div>
+      <div class="col-md-6 col-12">
+        <img
+          src="../../../../assets/images/percentage_and_bag.png"
+          class="mt-negative-150"
+          alt="Sacola de commpras ficticia" />
+      </div>
+    </div>
+  </div>
+</section>
+<section *ngFor="let item of objBannerApp | async">
+  <div
+    [style.backgroundImage]="'url(' + item.url + ')'"
+    style="
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 50vh;
+    "></div>
+</section>
+<section class="bg-white">
+  <div class="py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <img
+            src="../../../../assets/images/eclipse_hand_phone.png"
+            class="img-fluid ml-negative" />
+        </div>
+        <div class="col-md-6 col-12 pt-3">
+          <h1 class="text-primary py-2">
+            Baixe o aplicativo do
+            <span class="text-blue-500">Cartão do Empresário</span>
+          </h1>
+          <p class="pb-3">Tenha um mundo de benefícios em suas mãos</p>
+          <button type="button" class="btn-main fs-6 py-2 px-3">
+            Baixar aplicativo
+          </button>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+          <img
+            src="../../../../assets/images/folha-dourada.png"
+            class="mr-negative mt-negative-150 d-none d-md-block"
+            alt="Folha dourada com galho" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-gray-100">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 col-12 d-block my-auto">
+        <h3 class="text-blue-500 pt-2 pb-4 fw-bold">Parceiros</h3>
+        <p class="text-black py-2">
+          Além de fazer parte do Cartão do Empresário como associado, você
+          também pode ser um parceiro, ofertando descontos exclusivos em
+          produtos e serviços. Para ser parceiro, basta se cadastrar aqui, sem
+          cobrança de taxa
+        </p>
+        <p class="text-black py-2">
+          Ainda não conhace nosso portfólio de parceiros?
+        </p>
+        <p class="text-black py-2">Ganha quem indica e quem compra!</p>
+
+        <button type="button" class="btn-main fs-6 py-2 px-3">
+          Quero ser parceiro
+        </button>
+      </div>
+      <div class="col-md-6 col-12">
+        <img
+          src="../../../../assets/images/woman-smille-tshirt-yellow.png"
+          class="ms-md-5 pt-4 pt-md-0"
+          alt="Uma mulher com uma t-shirt amarela segurando um celular" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-white">
+  <div class="py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <img
+            src="../../../../assets/images/card_in_hand_woman_winked.png"
+            class="img-fluid mt-negative-150 ml-negative" />
+        </div>
+        <div class="col-md-6 col-12 pt-3">
+          <h1 class="text-primary py-2">
+            Baixe o aplicativo do
+            <span class="text-blue-500">Amigo do Cartão</span>
+          </h1>
+          <p class="pb-3">
+            Você também pode ser um Amigo do Cartão indicando empresários para
+            ser associado. Efetivando a compra com a sua indicação, o empresário
+            fará parte do nosso clube de vantagens e você será premiado.
+          </p>
+          <p>Ganha quem indica e quem compra!</p>
+          <button type="button" class="btn-main fs-6 py-2 px-3">
+            Saiba mais
+          </button>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+          <div class="col-6 d-none d-md-block">
+            <img
+              src="../../../../assets/images/folha-azul-left.png"
+              class="ml-negative mt-negative-150 d-none d-md-block"
+              alt="Folhas azuis" />
+          </div>
+          <div class="col-6 d-none d-md-flex justify-content-end me-5">
+            <img
+              src="../../../../assets/images/2folhas-azul.png"
+              class="mr-negative d-none d-md-block"
+              alt="Folhas azuis" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section *ngFor="let item of objBannerAmigo | async">
+  <div
+    [style.backgroundImage]="'url(' + item.url + ')'"
+    style="
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 50vh;
+    "></div>
+</section>
+<section class="bg-white">
+  <div class="container py-5">
+    <div class="d-flex justify-content-center py-3">
+      <h1 class="text-blue-500">Dúvidas</h1>
+    </div>
+    <div class="col-12 py-5">
+      <app-accordion></app-accordion>
+    </div>
+  </div>
+</section>
+<section class="bg-white">
+  <div class="row">
+    <div class="col-6 d-none d-md-flex banner-womans-dancing"></div>
+    <div class="col-md-6 col-12 d-flex align-items-center">
+      <div class="container">
+        <h1 class="text-blue-500 text-center pb-3">Fale conosco</h1>
+        <section class="form">
+          <form class="px-5">
+            <section class="row px-5">
+              <section class="col-12 mb-3">
+                <label for="nome_completo" class="form-label mb-1"
+                  >Nome completo *</label
+                >
+                <input
+                  type="text"
+                  class="form-control form-control-lg form-control-lg"
+                  id="nome_completo"
+                  formControlName="nome_completo" />
+              </section>
+              <section class="col-12 mb-3">
+                <label for="nome_completo" class="form-label mb-1"
+                  >E-mail *</label
+                >
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="email"
+                  formControlName="email" />
+              </section>
+              <section class="col-12 mb-3">
+                <label for="mensagem" class="form-label mb-1">Mensagem</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  formControlName="mensagem"></textarea>
+              </section>
+              <section class="d-flex justify-content-end">
+                <button type="button" class="btn-main fs-6 py-2 px-3">
+                  Enviar
+                </button>
+              </section>
+            </section>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,117 @@
+<section class="container mb-4 mb-md-5 heading">
+  <article class="col">
+    <h1 class="text-center">Que bom ter você aqui!</h1>
+    <h2 class="text-center mb-3">
+      Insira seus dados nos campos abaixo para se cadastrar no
+      <span>Portal do Cliente</span>.
+    </h2>
+  </article>
+</section>
+
+<section class="container form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <section class="row">
+      <section class="col mb-3">
+        <label for="nome_completo" class="form-label mb-1">Nome completo</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg form-control-lg"
+          id="nome_completo"
+          formControlName="nome_completo"
+          placeholder="Digite seu nome completo" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="cpf" class="form-label mb-1">CPF</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="cpf"
+          formControlName="cpf"
+          placeholder="Digite seu CPF"
+          mask="000.000.000-00" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="cnpj" class="form-label mb-1">CNPJ</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="cnpj"
+          formControlName="cnpj"
+          placeholder="Digite o CNPJ"
+          [mask]="'00.000.000/0000-00'" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="email" class="form-label mb-1">E-mail</label>
+
+        <input
+          type="email"
+          class="form-control form-control-lg"
+          id="email"
+          formControlName="email"
+          placeholder="Digite seu e-mail"
+          [class.is-invalid]="emailControl.invalid && emailControl.touched" />
+        <div
+          *ngIf="emailControl.invalid && emailControl.touched"
+          class="invalid-feedback">
+          Email inválido. Verifique o formato.
+        </div>
+      </section>
+
+      <section class="col-sm mb-5">
+        <label for="cel" class="form-label mb-1">Celular</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="cel"
+          formControlName="cel"
+          placeholder="Digite seu celular com DDD"
+          [mask]="'(00) 00000-0000'" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="senha" class="form-label mb-1">Crie sua senha</label>
+
+        <input
+          type="senha"
+          class="form-control form-control-lg"
+          id="senha"
+          formControlName="senha"
+          placeholder="Digite sua senha" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="senha_confirmar" class="form-label mb-1">
+          Confirme sua senha
+        </label>
+
+        <input
+          type="password"
+          class="form-control form-control-lg"
+          id="senha_confirmar"
+          formControlName="senha_confirmar"
+          placeholder="Digite sua senha novamente" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="d-grid d-md-flex mx-auto justify-content-md-end mt-4">
+        <button type="submit" class="btn btn btn-lg btn-primary d-block">
+          Continuar
+        </button>
+      </section>
+    </section>
+  </form>
+</section>

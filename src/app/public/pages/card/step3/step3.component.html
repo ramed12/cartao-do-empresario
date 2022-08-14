@@ -1,0 +1,155 @@
+<section class="container mb-4 mb-md-5 heading">
+  <article class="col">
+    <h1 class="text-center">Dados pessoais</h1>
+    <h2 class="text-center mb-3">Insira seus dados pessoais.</h2>
+  </article>
+</section>
+
+<section class="container form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="data_nascimento" class="form-label mb-1">
+          Data de nascimento
+        </label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg form-control-lg"
+          id="data_nascimento"
+          formControlName="data_nascimento"
+          placeholder="Digite a sua data de nascimento" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="nome_fantasia" class="form-label mb-1">Estado civil</label>
+
+        <select
+          class="form-select form-select-lg"
+          id="estado_civil"
+          formControlName="estado_civil"
+          aria-label="Estado civil">
+          <option value="1">Solteiro(a)</option>
+          <option value="2">Casado(a)</option>
+          <option value="3">Divorciado(a)</option>
+        </select>
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="genero" class="form-label mb-1">Gênero</label>
+
+        <select
+          class="form-select form-select-lg"
+          id="genero"
+          formControlName="genero"
+          aria-label="Gênero">
+          <option value="1">A</option>
+          <option value="2">B</option>
+          <option value="3">C</option>
+        </select>
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="cep" class="form-label mb-1">CEP</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="cep"
+          formControlName="cep"
+          placeholder="Digite o seu CEP" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="cidade" class="form-label mb-1">Cidade</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="cidade"
+          formControlName="cidade"
+          placeholder="Digite a sua cidade" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="estado" class="form-label mb-1">Estado</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="estado"
+          formControlName="estado"
+          placeholder="Digite o seu estado" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="logradouro" class="form-label mb-1">Logradouro</label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="logradouro"
+          formControlName="logradouro"
+          placeholder="Digite o seu logradouro" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="numero" class="form-label mb-1">Número</label>
+
+        <input
+          type="number"
+          class="form-control form-control-lg"
+          id="numero"
+          formControlName="numero"
+          placeholder="Digite o seu número (endereço)" />
+      </section>
+
+      <section class="col-sm mb-3">
+        <label for="complemento" class="form-label mb-1">
+          Complemento (opcional)
+        </label>
+
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="complemento"
+          formControlName="complemento"
+          placeholder="Digite um complemento (opcional)" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm mb-3">
+        <label for="file" class="form-label mb-1">
+          Selecione ou tire uma foto do seu rosto para inserir em seu cadastro
+        </label>
+
+        <input
+          type="file"
+          class="form-control"
+          id="file"
+          formControlName="file" />
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="d-grid d-md-flex mx-auto justify-content-md-between mt-4">
+        <button
+          type="submit"
+          class="btn btn btn-secondary d-block mb-4 mb-md-0">
+          Voltar
+        </button>
+
+        <button type="submit" class="btn btn btn-lg btn-primary d-block">
+          Continuar
+        </button>
+      </section>
+    </section>
+  </form>
+</section>

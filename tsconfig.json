@@ -1,0 +1,52 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@core-auth/*": ["src/app/core/auth/*"],
+      "@core-auth": ["src/app/core/auth/index"],
+      "@core-guards/*": ["src/app/core/guards/*"],
+      "@core-guards": ["src/app/core/guards/index"],
+      "@core-services/*": ["src/app/core/services/*"],
+      "@core-services": ["src/app/core/services/index"],
+      "@core-models/*": ["src/app/core/models/*"],
+      "@core-models": ["src/app/core/models/index"],
+      "@public-services/*": ["src/app/public/services/*"],
+      "@public-services": ["src/app/public/services/index"],
+      "@public-models/*": ["src/app/public/models/*"],
+      "@public-models": ["src/app/public/models/index"],
+      "@private-services/*": ["src/app/private/services/*"],
+      "@private-services": ["src/app/private/services/index"],
+      "@private-models/*": ["src/app/private/models/*"],
+      "@private-models": ["src/app/private/models/index"],
+      "@shared-services/*": ["src/app/shared/services/*"],
+      "@shared-services": ["src/app/shared/services/index"],
+      "@shared-models/*": ["src/app/shared/models/*"],
+      "@shared-models": ["src/app/shared/models/index"],
+    },
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": ["es2020", "dom"]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

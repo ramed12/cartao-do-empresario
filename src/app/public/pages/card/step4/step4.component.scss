@@ -1,0 +1,94 @@
+@import "app";
+
+.heading {
+  h1 {
+    font-family: "Gotham";
+    font-size: 1.5rem;
+    color: $yellow-dark;
+  }
+
+  h2 {
+    font-family: "Gotham Book";
+    font-size: 1.125rem;
+    color: $gray-dark;
+  }
+}
+
+.form {
+  .row {
+    .col-sm {
+      margin: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        margin: 1rem 0.5rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        margin: 1rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: 1rem 6rem;
+      }
+
+      .form-check-input {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+
+      .form-check-label {
+        margin-left: 0.5rem;
+        font-family: "Inter-Medium";
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  .card {
+    padding: 1rem;
+    border: 1px solid $gray-light-1;
+    border-radius: 5px;
+
+    .form-check-input {
+      width: 1.25rem;
+      height: 1.25rem;
+      padding: 0.5rem;
+    }
+
+    .form-check-label {
+      margin-left: 0.5rem;
+      font-family: "Inter-Medium";
+      font-size: 1.125rem;
+    }
+  }
+
+  .btn-primary {
+    font-family: "Inter-Medium";
+    font-size: 1.125rem;
+    border-radius: 4px;
+    color: $white;
+    border-color: $yellow-light;
+    background-color: $yellow-light;
+
+    @include media-breakpoint-up(md) {
+      width: 25%;
+    }
+  }
+
+  .btn-secondary {
+    font-family: "Inter-Medium";
+    font-size: 1.125rem;
+    border-radius: 4px;
+    color: $yellow-dark;
+    border-color: $yellow-dark;
+    background-color: $white;
+
+    @include media-breakpoint-up(md) {
+      width: 25%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 15%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<div class="container pt-4">
+  <p>
+    Usuário: <b>{{ profile.nome }} </b> ({{ profile.email }})
+  </p>
+  <p>
+    CPF: {{ profile.cpf }}
+    <br />
+    Celular: {{ profile.celular }}
+    <br />
+    Data de Nascimento: {{ profile.dataNascimento | date }}
+    <br />
+    Endereço: {{ profile.endereco }}
+    <br />
+    Bairro: {{ profile.bairro }}
+    <br />
+    Cidade: {{ profile.cidade }}
+    <br />
+    UF: {{ profile.uf }}
+    <br />
+    CEP: {{ profile.cep }}
+    <br />
+    Complemento: {{ profile.complemento }}
+    <br />
+    Cartão: <a (click)="openLinkNewTab(profile.cardUrl)"> Clique <u>aqui</u></a>
+    <br />
+    Empresa: {{ profile.empresa.nomeFantasia }} /
+    {{ profile.empresa.razaoSocial }} / {{ profile.empresa.cnpj }}
+    <br />
+    Categoria: {{ profile.categoria.descricao }} /
+    {{ profile.categoria.codigo }}
+    <br />
+    Situação: {{ profile.situacao.descricao }} / {{ profile.situacao.codigo }}
+  </p>
+
+  <button (click)="logout()" class="btn-main-yellow-light">Sair</button>
+</div>

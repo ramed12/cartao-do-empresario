@@ -1,0 +1,32 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@core-auth/*": ["src/app/core/auth/*"],
+      "@core-auth": ["src/app/core/auth/index"],
+      "@core-guards/*": ["src/app/core/guards/*"],
+      "@core-guards": ["src/app/core/guards/index"],
+      "@core-services/*": ["src/app/core/services/*"],
+      "@core-services": ["src/app/core/services/index"],
+      "@core-models/*": ["src/app/core/models/*"],
+      "@core-models": ["src/app/core/models/index"],
+      "@public-services/*": ["src/app/public/services/*"],
+      "@public-services": ["src/app/public/services/index"],
+      "@public-models/*": ["src/app/public/models/*"],
+      "@public-models": ["src/app/public/models/index"],
+      "@private-services/*": ["src/app/private/services/*"],
+      "@private-services": ["src/app/private/services/index"],
+      "@private-models/*": ["src/app/private/models/*"],
+      "@private-models": ["src/app/private/models/index"],
+      "@shared-services/*": ["src/app/shared/services/*"],
+      "@shared-services": ["src/app/shared/services/index"],
+      "@shared-models/*": ["src/app/shared/models/*"],
+      "@shared-models": ["src/app/shared/models/index"],
+    },
+    "outDir": "./out-tsc/spec",
+    "types": ["jasmine"]
+  },
+  "files": ["src/test.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+}

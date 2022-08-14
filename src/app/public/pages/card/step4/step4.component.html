@@ -1,0 +1,162 @@
+<section class="container mb-4 mb-md-5 heading">
+  <article class="col">
+    <h1 class="text-center">Interesses</h1>
+    <h2 class="text-center mb-3">Selecione seus interesses.</h2>
+  </article>
+</section>
+
+<section class="container form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <section class="row">
+      <section class="col-sm">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="educacao"
+          formControlName="bemestar_saude_beleza"
+          value="" />
+
+        <label class="form-check-label" for="bemestar_saude_beleza">
+          Bem estar, saúde e beleza
+        </label>
+      </section>
+
+      <section class="col-sm">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="educacao"
+          formControlName="educacao"
+          value="" />
+
+        <label class="form-check-label" for="educacao">Educação</label>
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="gastronomia"
+          formControlName="gastronomia"
+          value="" />
+
+        <label class="form-check-label" for="gastronomia"> Gastronomia </label>
+      </section>
+
+      <section class="col-sm">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="infantil"
+          formControlName="infantil"
+          value="" />
+
+        <label class="form-check-label" for="infantil">Infantil</label>
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="lazer_cultura"
+          formControlName="lazer_cultura"
+          value="" />
+
+        <label class="form-check-label" for="lazer_cultura"
+          >Lazer e cultura</label
+        >
+      </section>
+
+      <section class="col-sm">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="produtos_servicos"
+          formControlName="produtos_servicos"
+          value="" />
+
+        <label class="form-check-label" for="produtos_servicos"
+          >Produtos e serviços</label
+        >
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="col-sm">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="viagens_turismo"
+          formControlName="viagens_turismo"
+          value="" />
+
+        <label class="form-check-label" for="viagens_turismo">
+          Viagens e turismo
+        </label>
+      </section>
+
+      <section class="col-sm">
+        <input
+          type="checkbox"
+          class="form-check-input"
+          id="presentes"
+          formControlName="presentes"
+          value="" />
+
+        <label class="form-check-label" for="presentes">Presentes</label>
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="card mt-3">
+        <section class="col d-flex mb-3">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="termos"
+            formControlName="termos"
+            value="" />
+
+          <label class="form-check-label" for="termos">
+            Declaro a veracidade das informações fornecidas e concordo com os
+            <a href="#" target="_blank">
+              termos de uso e regulamento do Cartão do Empresário.
+            </a>
+          </label>
+        </section>
+
+        <section class="col d-flex">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="privacidade"
+            formControlName="privacidade"
+            value="" />
+
+          <label class="form-check-label" for="privacidade">
+            Concordo com a
+            <a href="#" target="_blank">Política de privacidade</a>.
+          </label>
+        </section>
+      </section>
+    </section>
+
+    <section class="row">
+      <section class="d-grid d-md-flex mx-auto justify-content-md-between mt-4">
+        <button
+          type="submit"
+          class="btn btn btn-secondary d-block mb-4 mb-md-0">
+          Voltar
+        </button>
+
+        <button type="submit" class="btn btn btn-lg btn-primary d-block">
+          Continuar
+        </button>
+      </section>
+    </section>
+  </form>
+</section>
